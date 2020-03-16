@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: dubbo_provider
+  profiles:
+    active: dev
+---
+spring:
+  profiles: dev
+  cloud:
+    nacos:
+      config:
+        namespace: dbd24739-b8c7-4507-87ca-09fde74d020b
+        server-addr: 10.211.55.11:8848
+        group: DEFAULT_GROUP
+        file-extension: yml
+        enabled: true
+        encode: UTF-8
+        shared-configs: base.yml
+#    以下可配置到nacos中
+#server:
+#  port: 8001
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://10.211.55.11:3306/nacos_config?useUnicode=true&useSSL=false&characterEncoding=utf8
+#    username: root
+#    password: 772147
+#dubbo:
+#  application:
+#    name: dubbo_provider
+#  protocol:
+#    name: dubbo
+#    port: 20880
+#  provider:
+#    version: lhj
+#demo:
+#  version: 李洪健provider
