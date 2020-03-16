@@ -21,14 +21,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * @author dave
- * @modify 2016-08-29 增加了set(final String key, final Object value)和<T> T get(final String key,final Class<T> clazz)
- */
 public  class JedisTemplate implements InitializingBean {
 	private static final Logger logger = LoggerFactory.getLogger(JedisTemplate.class);
-	public final static SerializerFeature[] FASTJSON_FEATURES =  new SerializerFeature[]{SerializerFeature.DisableCircularReferenceDetect, SerializerFeature.DisableCheckSpecialChar};
-	public final static Feature[] FASTJSON_UN_FEATURES =  new Feature[]{Feature.DisableCircularReferenceDetect};
 	private JedisPool jedisPool = null;
 	private  int retryNum =1000;
 	private  int maxActive=1000;
@@ -46,7 +40,6 @@ public  class JedisTemplate implements InitializingBean {
 		}
 		
 		JedisPoolConfig config = new JedisPoolConfig();
-
         config.setMaxTotal(maxActive);
 		config.setMaxIdle(maxIdle);		
 		config.setMaxWaitMillis(maxWait);
@@ -134,13 +127,7 @@ public  class JedisTemplate implements InitializingBean {
            return result;  
        }  
    }  
-   
-   
-   
-   
-   
-   
-   
+
    /** 
     * 删除模糊匹配的key 
     * @param likeKey 模糊匹配的key 

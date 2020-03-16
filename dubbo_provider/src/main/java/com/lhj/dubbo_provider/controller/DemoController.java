@@ -7,14 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class DemoController {
-
     @Autowired
     private JedisTemplate jedisTemplate;
 
     @GetMapping("redis")
     public String getRedis() {
         jedisTemplate.set("name", "lihongjian");
-
         return jedisTemplate.get("name", String.class);
     }
 }
