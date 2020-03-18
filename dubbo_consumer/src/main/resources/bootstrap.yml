@@ -16,16 +16,25 @@ spring:
         enabled: true
         encode: UTF-8
         shared-configs: base.yml
-#可配置到nacos中
+#nacos配置
+#dubbo_consumer-dev.yml
 #server:
 #  port: 8002
 #dubbo:
 #  application:
 #    name: dubbo_consumer
+
+
+
+#base.yml
+#dubbo:
+#  registry:
+#    address: nacos://10.211.55.11:8848
 #  protocol:
 #    name: dubbo
-#    port: 20880
+#    port: -1
 #  consumer:
+#    check: false
 #    version: lhj
-#demo:
-#  version: 李洪健consumer
+#  provider:
+#    version: lhj
