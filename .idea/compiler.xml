@@ -11,9 +11,14 @@
         <module name="dubbo_consumer2" />
         <module name="lihongjian" />
         <module name="dubbo_api" />
+        <module name="rocketmqc" />
         <module name="dubbo_consumer" />
+        <module name="rocketmqp" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="rocketmqc" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -22,6 +27,8 @@
       <module name="dubbo_consumer" options="-parameters" />
       <module name="dubbo_consumer2" options="-parameters" />
       <module name="dubbo_provider" options="-parameters" />
+      <module name="rocketmqc" options="-parameters" />
+      <module name="rocketmqp" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package com.lhj.dubbo_provider.redis;
+package com.lhj.dubbo_provider.utils.redis;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;

@@ -1,7 +1,7 @@
 package com.lhj.dubbo_provider.config;
 
 
-import com.lhj.dubbo_provider.redis.JedisTemplate;
+import com.lhj.dubbo_provider.utils.redis.JedisTemplate;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

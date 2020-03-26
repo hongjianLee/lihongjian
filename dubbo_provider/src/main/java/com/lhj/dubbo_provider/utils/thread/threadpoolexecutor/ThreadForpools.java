@@ -1,4 +1,4 @@
-package com.lhj.dubbo_provider.thread.threadpoolexecutor;
+package com.lhj.dubbo_provider.utils.thread.threadpoolexecutor;
 
 public class ThreadForpools implements Runnable{
 

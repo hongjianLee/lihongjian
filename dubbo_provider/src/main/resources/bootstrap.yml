@@ -17,7 +17,6 @@ spring:
         encode: UTF-8
         shared-configs: base.yml
 #nacos配置
-#dubbo_provider-dev.yml
 #server:
 #  port: 8001
 #spring:

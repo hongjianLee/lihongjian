@@ -1,8 +1,6 @@
-package com.lhj.dubbo_provider.redis;
+package com.lhj.dubbo_provider.utils.redis;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.parser.Feature;
-import com.alibaba.fastjson.serializer.SerializerFeature;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

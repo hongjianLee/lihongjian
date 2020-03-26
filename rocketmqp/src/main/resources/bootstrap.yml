@@ -1,6 +1,6 @@
 spring:
   application:
-    name: dubbo_consumer
+    name: rocketmqp
   profiles:
     active: dev
 ---
@@ -16,24 +16,16 @@ spring:
         enabled: true
         encode: UTF-8
         shared-configs: base.yml
-#nacos配置
-#dubbo_consumer-dev.yml
+#rocketmqp-dev.yml
 #server:
-#  port: 8002
+#  port: 8003
 #dubbo:
 #  application:
-#    name: dubbo_consumer
-
-
-#base.yml
-#dubbo:
-#  registry:
-#    address: nacos://10.211.55.11:8848
-#  protocol:
-#    name: dubbo
-#    port: -1
-#  consumer:
-#    check: false
-#    version: lhj
-#  provider:
-#    version: lhj
+#    name: rocketmqp
+#rocketmq:
+#  tag:
+#    prefix:
+#  name-server: 10.211.55.11:9876
+#  producer:
+#    group: LhjMQProducerGroup
+#    sendMessageTimeout: 300000

@@ -1,4 +1,4 @@
-package com.lhj.dubbo_provider.thread.showthread;
+package com.lhj.dubbo_provider.utils.thread.showthread;
 
 
 import org.junit.Test;

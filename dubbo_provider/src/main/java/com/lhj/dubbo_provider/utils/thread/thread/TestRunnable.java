@@ -1,4 +1,4 @@
-package com.lhj.dubbo_provider.thread.thread;
+package com.lhj.dubbo_provider.utils.thread.thread;
 
 public class TestRunnable implements Runnable {
     @Override

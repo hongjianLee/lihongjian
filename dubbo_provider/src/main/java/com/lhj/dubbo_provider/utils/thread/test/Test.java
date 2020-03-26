@@ -1,9 +1,9 @@
-package com.lhj.dubbo_provider.thread.test;
+package com.lhj.dubbo_provider.utils.thread.test;
 
 
-import com.lhj.dubbo_provider.thread.thread.TestCallable;
-import com.lhj.dubbo_provider.thread.thread.TestRunnable;
-import com.lhj.dubbo_provider.thread.thread.TestThread;
+import com.lhj.dubbo_provider.utils.thread.thread.TestCallable;
+import com.lhj.dubbo_provider.utils.thread.thread.TestRunnable;
+import com.lhj.dubbo_provider.utils.thread.thread.TestThread;
 
 import java.util.concurrent.FutureTask;
 
