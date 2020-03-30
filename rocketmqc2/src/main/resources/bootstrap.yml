@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: rocketmqc
+  profiles:
+    active: dev
+---
+spring:
+  profiles: dev
+  cloud:
+    nacos:
+      config:
+        namespace: dbd24739-b8c7-4507-87ca-09fde74d020b
+        server-addr: 10.211.55.11:8848
+        group: DEFAULT_GROUP
+        file-extension: yml
+        enabled: true
+        encode: UTF-8
+        shared-configs: base.yml

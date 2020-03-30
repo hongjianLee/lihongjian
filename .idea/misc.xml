@@ -13,10 +13,12 @@
         <option value="$PROJECT_DIR$/dubbo_consumer2/pom.xml" />
         <option value="$PROJECT_DIR$/rocketmqp/pom.xml" />
         <option value="$PROJECT_DIR$/rocketmpc/pom.xml" />
+        <option value="$PROJECT_DIR$/rocketmqc2/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/lrocketmqc/pom.xml" />
         <option value="$PROJECT_DIR$/rocketmqc/pom.xml" />
       </set>
     </option>

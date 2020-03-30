@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="lrocketmqc" />
+        <module name="rocketmqc2" />
         <module name="dubbo_provider" />
         <module name="dubbo_api2" />
         <module name="dubbo_consumer2" />
@@ -17,6 +19,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="lrocketmqc" target="1.8" />
       <module name="rocketmqc" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -27,7 +30,9 @@
       <module name="dubbo_consumer" options="-parameters" />
       <module name="dubbo_consumer2" options="-parameters" />
       <module name="dubbo_provider" options="-parameters" />
+      <module name="lrocketmqc" options="-parameters" />
       <module name="rocketmqc" options="-parameters" />
+      <module name="rocketmqc2" options="-parameters" />
       <module name="rocketmqp" options="-parameters" />
     </option>
   </component>
