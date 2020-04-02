@@ -20,7 +20,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="lrocketmqc" target="1.8" />
-      <module name="rocketmqc" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
